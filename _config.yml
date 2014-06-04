@@ -3,7 +3,6 @@ permalink: pretty
 markdown: rdiscount
 
 gems: [ "jekyll-sitemap" ]
-# lsi: true
 
 prose:
   rooturl: 'articles/_posts'
