@@ -1,0 +1,16 @@
+$font-primary-sans-serif: "proxima-nova", Helvetica, Arial, sans-serif;
+// $font-secondary-sans-serif: "Montserrat", Helvetica, Arial, sans-serif;
+
+$font-primary-serif: "lexia", Helvetica, Arial, sans-serif;
+// $font-secondary-serif: "Lato", Helvetica, Arial, sans-serif;
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-primary-sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}

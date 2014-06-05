@@ -1,0 +1,46 @@
+@import "header";
+@import "footer";
+
+$mobile: 320px;
+$tablet: 600px;
+$vertical: 940px;
+$desktop: 1080px;
+$widescreen: 1200px;
+
+
+$susy: (
+  columns: 6,
+  column-width: 40px,
+  gutters: 1 / 2,
+  math: static,
+  output: float,
+  global-box-sizing: border-box,
+  use-custom: (rem: true)
+);
+
+@include border-box-sizing;
+
+.container {
+  @include container($susy);
+  @extend #clearfix;
+
+  // 640px
+  @include breakpoint($tablet) {
+    @include container(12);
+  }
+
+  // 940px
+  @include breakpoint($vertical) {
+    @include container(16);
+  }
+
+  // 1080px
+  @include breakpoint($desktop) {
+    @include container(18);
+  }
+
+  // 1200px
+  @include breakpoint($widescreen) {
+    @include container(20);
+  }
+}
