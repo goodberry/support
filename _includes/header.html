@@ -1,16 +1,18 @@
 <header role="global">
-  <h1>
-    <a href="{{ site.url }}/">Goodberry Support</a>
-  </h1>
+  <div class="container">
+    <h1>
+      <a href="{{ site.url }}/">Goodberry Support</a>
+    </h1>
 
-  <nav>
-    <ul>
-      <li{% if page.body_class == 'home' %} class="current"{% endif %}>
-        <a href="{{ site.url }}/">Help Center</a>
-      </li>
-      <li{% if page.body_class == 'contact' %} class="current"{% endif %}>
-        <a href="{{ site.url }}/contact/">Contact</a>
-      </li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li{% if page.body_class == 'home' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/">Help Center</a>
+        </li>
+        <li{% if page.body_class == 'contact' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/contact/">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
